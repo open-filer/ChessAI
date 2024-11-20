@@ -5,8 +5,9 @@ Welcome to my ChessAI project!
 ## Project Overview
 This project aims to develop a chess-playing AI using Python. It is being built as part of my journey to participate in the ChessAI competition sponsored by FIDE, Google, and Kaggle.
 
-## Day 1-2:
-It's been a while since I last worked in Python, so I’ve started by revisiting the basics. I’ve set up the development environment and tested the `python-chess` library to handle chess board creation and basic moves.
+## Progression:
+1. It's been a while since I last worked in Python, so I’ve started by revisiting the basics. I’ve set up the development environment and tested the `python-chess` library to handle chess board creation and basic moves.
+2. I learnt basic function such as creating a board and moving pieces [basic_fun.py](basic_fun.py) and created a skeleton game btw user (with white piece) and computer (with black piece) which displays checkmate , stalemate and draws [com_prog.py](com_prog.py).
 
 ### Goals:
 - Develop a chess-playing AI.
@@ -15,19 +16,22 @@ It's been a while since I last worked in Python, so I’ve started by revisiting
 ## Installation
 
 1. Clone this repository.
-2. Set up a virtual environment:
+   ```bash
+   git clone https://github.com/open-filer/ChessAI.git
+   ```
+3. Set up a virtual environment:
     ```bash
     python -m venv venv
     ```
-3. Activate the virtual environment:
+4. Activate the virtual environment:
     - On Windows:  
       ```bash
       venv\Scripts\activate
       ```
-4. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+   - On Mac:
+     ```bash
+     venv/bin/activate
+     ```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
