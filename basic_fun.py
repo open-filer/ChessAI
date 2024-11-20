@@ -4,7 +4,7 @@ board = chess.Board()
 print(board)
 print("\n")
 
-#function to take moves from user 
+#function to take moves from users alternately 
 
 def make_move():
     legal_moves = board.legal_moves
