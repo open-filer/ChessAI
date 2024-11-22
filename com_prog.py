@@ -5,6 +5,26 @@ import random
 # Creating board
 board = chess.Board()
 
+# function for board evaluation
+def eval_board(board):
+
+    piece_val = {
+        chess.PAWN : 1,
+        chess.ROOK : 5 ,
+        chess.BISHOP : 3 ,
+        chess.KNIGHT : 3 ,
+        chess.QUEEN : 9 ,
+        chess.KING : 0
+    }                   
+    
+
+    score = 0 
+    for piece_type in piece_val :
+        score += len(board.pieces(piece_type, chess.WHITE)) * piece_val[piece_type]
+        score -= len(board.pieces(piece_type, chess.BLACK)) * piece_val[piece_type]
+    
+    return score
+
 # Function for user move
 def user_move():
     while True :
@@ -37,6 +57,7 @@ def play():
 
     while not board.is_game_over(): # game over ---> false || not false ---> true 
         #playing until game is over ( When game is over boolean becomes false and loop breaks)   
+        print("Evaluation score : " ,eval_board(board))
         print("Your turn ! ")
         user_move()
 
