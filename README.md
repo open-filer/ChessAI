@@ -9,7 +9,8 @@ This project aims to develop a chess-playing AI using Python. It is being built 
 1. It's been a while since I last worked in Python, so I’ve started by revisiting the basics. I’ve set up the development environment and tested the `python-chess` library to handle chess board creation and basic moves.
 2. I learnt basic function such as creating a board and moving pieces [basic_fun.py](basic_fun.py) and created a skeleton game btw user (with white piece) and computer (with black piece) which displays checkmate , stalemate and draws [com_prog.py](com_prog.py).
 3. [g_state_det.py](g_state_det.py) is for detemining the state of game.
-4. Implementing basic evaluation for position scoring , adding positional scoring with Piece-Square tables and decting game.
+4. Added a piece evaluation counts the material on board and give a score based on value set for each piece [piece_eval.py](piece_eval.py)
+5. Implementing basic evaluation for position scoring , adding positional scoring with Piece-Square tables and decting game. 
 
 ### Goals:
 - Develop a chess-playing AI.
